@@ -18,6 +18,7 @@ public class FirstTest {
 public void validateFirstTest() throws IOException {
 	WebDriver wd = new FirefoxDriver();
 	wd.manage().window().maximize();
+	wd.get("https://www.google.com/");
 	WebElement input = wd.findElement(By.name("q"));
 	input.sendKeys("chennai");
 	input.submit();
